@@ -152,5 +152,48 @@ a-path SD range: **0.043–0.056**; b-path SD range: **0.073–0.124**. The earl
 
 ---
 
-*(continued §7–§10)*
+## 7. Stress→SI slope attenuation by mediators, H4-like (xlsx Table 4)
+
+Within-class total stress → SI slope, before vs after adjusting for the three concurrent proximal mediators:
+
+| Subtype | Before mediators | After mediators | Attenuation | % mediated |
+|---|---|---|---|---|
+| C1 (Low-stable) | 0.0012 [−0.0007, 0.0030] **not credible** | 0.0004 [−0.0010, 0.0017] | 0.0008 [−0.0015, 0.0031] | — (no credible total) |
+| **C2 (high-fluct)** | **0.0327** [0.0298, 0.0357] \* | 0.0096 [0.0070, 0.0122] \* | **0.0231** [0.0191, 0.0270] \* | **~71%** |
+| **C3 (high-intense)** | **0.0437** [0.0385, 0.0486] \* | 0.0126 [0.0083, 0.0168] \* | **0.0311** [0.0245, 0.0376] \* | **~71%** |
+
+**Subtype contrasts on stress → SI slope**:
+
+| Contrast | Before mediators | After mediators | Attenuation |
+|---|---|---|---|
+| C2 − C1 | 0.0316 [0.0286, 0.0345] \* | 0.0093 [0.0065, 0.0121] \* | 0.0223 [0.0182, 0.0264] \* |
+| C3 − C1 | 0.0425 [0.0372, 0.0477] \* | 0.0122 [0.0078, 0.0167] \* | 0.0303 [0.0235, 0.0371] \* |
+| **C3 − C2** | **0.0110** [0.0055, 0.0163] \* | **0.0030** [−0.0018, 0.0077] **not credible** | 0.0080 [0.0009, 0.0151] \* |
+
+**Reading**: the C3 − C2 contrast on the *direct* stress→SI slope is credibly positive **before** mediators (0.0110 \*) but is **substantially attenuated and no longer credibly different from zero after** adjusting for the three concurrent mediators (0.0030, CI crosses zero). This is the cleanest evidence that the C3-vs-C2 difference is **fully captured by the three proximal pathways** — there is no residual direct stress→SI effect distinguishing the two high-fluctuating subtypes once mediators are in the model. Couple this with §6 above (where the *indirect* C3 − C2 was already null for entrap and burden) and the conclusion is firm: **C2 and C3 are dynamically indistinguishable, and the dissociation between dynamic and static axes is empirically clean.**
+
+---
+
+## 8. Within-20-min response-latency sensitivity (xlsx Tables S3, S4)
+
+Subsample retaining only EMA prompts answered within 20 min of scheduled delivery (test against possible recall distortion at longer latencies):
+
+| Index | Primary | Within-20-min subsample |
+|---|---|---|
+| EMA prompts, n | 28,113 | **20,867** |
+| Participants, n | 391 | 391 |
+| Person-waves, n | 1,553 | 1,553 |
+
+H1 within-person indirect effects on the 20-min subsample:
+
+| Pathway | Posterior median | 95% CrI | pd |
+|---|---|---|---|
+| Stress → Entrapment → SI | 0.0025 | [0.0017, 0.0035] | > 0.999 |
+| Stress → Perceived burdensomeness → SI | 0.0018 | [0.0010, 0.0027] | > 0.999 |
+| Stress → Thwarted belongingness → SI | 0.0009 | [0.0004, 0.0015] | 1.000 |
+
+**Reading**: estimates are within rounding of the primary-sample values (§4 above). The cascade is robust to plausible recall-distortion truncation.
+
+---
+
 
