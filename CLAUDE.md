@@ -25,6 +25,7 @@ Apply these **without being asked**, on every relevant action:
 - Don't run `Rscript brms_main_analysis.R` from scratch without checking `models/*.rds` cache first.
 - Don't keep large intermediate objects only in conversation context.
 - Don't start a 10-minute job in foreground when background + `tee` is available.
+- **Never let cmdstanr write CSVs to Windows %TEMP%.** Confirmed loss on 2026-05-15: after 13 h of successful sampling on `sensitivity_lagged_8000iter.R`, Windows Storage Sense cleaned `C:\Users\…\Temp\Rtmp*` before brms could read them, and all samples were lost (`read_cmdstan_csv` fread error, execution halted, zero output). **Every long brms+cmdstanr script must set `Sys.setenv(TMPDIR = "D:/心理学/【0428小论文】/code/_cmdstan_csv")` (or equivalent project-local path) BEFORE loading brms/cmdstanr.**
 
 ### Chunked write rule (avoid socket close on large outputs)
 - Large single Write/Edit calls (> ~1500 words of new text in one tool call) tend to trigger `API Error: The socket connection was closed unexpectedly`.
