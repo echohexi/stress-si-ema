@@ -166,7 +166,7 @@ End the Introduction with **the 7 hypotheses listed as a compact box** (3-4 line
 
 - **Target length**: 1200–1500 words (JAD-standard; the existing 2500-word version is too long).
 - **Tone**: confident but not overclaiming. Use "we tested" not "we proved". Bayesian language ("credible", "95% posterior CrI", "PD") not frequentist ("significant").
-- **Citations**: APA 7th, but JAD permits up to ~5 citations per claim — be generous on key claims, lean on 2 strongest for routine claims.
+- **Citations**: **Elsevier Harvard author–year** (NOT APA 7th — common confusion; in-text appearance is similar but reference-list punctuation, year placement, and DOI handling differ). JAD permits up to ~5 citations per claim — be generous on key claims, lean on 2 strongest for routine claims. LaTeX users: `elsarticle-template-harv.tex` + `elsarticle-harv.bst`. Zotero CSL: `journal-of-affective-disorders.csl`. **Do NOT use APA 7 csl or `elsarticle-num.bst` — both produce wrong style.**
 - **Statistical reporting in Introduction**: NONE. No numbers in Introduction except optionally the sample N (391) at the very end.
 - **Acronyms**: introduce IMV, IPT, EMA, SI on first use; never abbreviate "suicidal ideation" until 2nd mention.
 
