@@ -1,0 +1,8 @@
+suppressMessages(library(tidyverse))
+scales <- read_csv("D:/R/research/all_scales_v5_FINAL.csv", show_col_types = FALSE)
+cat("=== ID columns in scales ===\n")
+print(grep("id|wave|pid", names(scales), value = TRUE, ignore.case = TRUE))
+cat("\n=== First 3 rows / first 8 cols ===\n")
+print(head(scales[, 1:min(8, ncol(scales))], 3))
+cat("\n=== All column names (first 25) ===\n")
+print(names(scales)[1:min(25, ncol(scales))])

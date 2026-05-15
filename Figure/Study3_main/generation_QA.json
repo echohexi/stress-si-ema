@@ -1,0 +1,227 @@
+{
+  "backend": "matplotlib",
+  "matplotlib_version": "3.10.9",
+  "palette": {
+    "C1": "#00A1D5",
+    "C2": "#DF8F44",
+    "C3": "#B24745"
+  },
+  "checks": {
+    "figure1_raw_mean_rows": 15,
+    "figure1_prevalence_rows": 6,
+    "figure2_rows": 12,
+    "figure3_indirect_rows": 9,
+    "figure3_contrast_rows": 9,
+    "figure_s1_path_rows": 27,
+    "figure4_within_rows": 9,
+    "figure4_contrast_rows": 9
+  },
+  "files": [
+    {
+      "file": "Figure_1_subtype_descriptive_outcomes.svg",
+      "exists": true,
+      "bytes": 43437
+    },
+    {
+      "file": "Figure_1_subtype_descriptive_outcomes.pdf",
+      "exists": true,
+      "bytes": 51125
+    },
+    {
+      "file": "Figure_1_subtype_descriptive_outcomes.png",
+      "exists": true,
+      "bytes": 91577
+    },
+    {
+      "file": "Figure_1_subtype_descriptive_outcomes.tiff",
+      "exists": true,
+      "bytes": 51840206
+    },
+    {
+      "file": "Figure_1_subtype_descriptive_outcomes.png",
+      "size": [
+        1800,
+        1250
+      ],
+      "gray_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "Figure_2_overall_mediation.svg",
+      "exists": true,
+      "bytes": 39515
+    },
+    {
+      "file": "Figure_2_overall_mediation.pdf",
+      "exists": true,
+      "bytes": 46907
+    },
+    {
+      "file": "Figure_2_overall_mediation.png",
+      "exists": true,
+      "bytes": 131507
+    },
+    {
+      "file": "Figure_2_overall_mediation.tiff",
+      "exists": true,
+      "bytes": 51840206
+    },
+    {
+      "file": "Figure_2_overall_mediation.png",
+      "size": [
+        1800,
+        1250
+      ],
+      "gray_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "Figure_3_subtype_specific_mediation.svg",
+      "exists": true,
+      "bytes": 47981
+    },
+    {
+      "file": "Figure_3_subtype_specific_mediation.pdf",
+      "exists": true,
+      "bytes": 48842
+    },
+    {
+      "file": "Figure_3_subtype_specific_mediation.png",
+      "exists": true,
+      "bytes": 154461
+    },
+    {
+      "file": "Figure_3_subtype_specific_mediation.tiff",
+      "exists": true,
+      "bytes": 51840206
+    },
+    {
+      "file": "Figure_3_subtype_specific_mediation.png",
+      "size": [
+        1800,
+        1250
+      ],
+      "gray_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "Figure_S1_path_decomposition.svg",
+      "exists": true,
+      "bytes": 51621
+    },
+    {
+      "file": "Figure_S1_path_decomposition.pdf",
+      "exists": true,
+      "bytes": 47811
+    },
+    {
+      "file": "Figure_S1_path_decomposition.png",
+      "exists": true,
+      "bytes": 68109
+    },
+    {
+      "file": "Figure_S1_path_decomposition.tiff",
+      "exists": true,
+      "bytes": 51840206
+    },
+    {
+      "file": "Figure_S1_path_decomposition.png",
+      "size": [
+        1800,
+        1250
+      ],
+      "gray_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "Figure_4_stress_si_attenuation.svg",
+      "exists": true,
+      "bytes": 46031
+    },
+    {
+      "file": "Figure_4_stress_si_attenuation.pdf",
+      "exists": true,
+      "bytes": 48846
+    },
+    {
+      "file": "Figure_4_stress_si_attenuation.png",
+      "exists": true,
+      "bytes": 90953
+    },
+    {
+      "file": "Figure_4_stress_si_attenuation.tiff",
+      "exists": true,
+      "bytes": 51840206
+    },
+    {
+      "file": "Figure_4_stress_si_attenuation.png",
+      "size": [
+        1800,
+        1250
+      ],
+      "gray_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "Figure_1_subtype_descriptive_outcomes_source_data.csv",
+      "exists": true,
+      "bytes": 1636
+    },
+    {
+      "file": "Figure_2_overall_mediation_source_data.csv",
+      "exists": true,
+      "bytes": 1191
+    },
+    {
+      "file": "Figure_3_subtype_specific_mediation_source_data.csv",
+      "exists": true,
+      "bytes": 2245
+    },
+    {
+      "file": "Figure_S1_path_decomposition_source_data.csv",
+      "exists": true,
+      "bytes": 1542
+    },
+    {
+      "file": "Figure_4_stress_si_attenuation_source_data.csv",
+      "exists": true,
+      "bytes": 1049
+    },
+    {
+      "file": "Figure_1_subtype_landscape.svg",
+      "exists": false,
+      "legacy": true
+    },
+    {
+      "file": "Figure_1_subtype_landscape.pdf",
+      "exists": false,
+      "legacy": true
+    },
+    {
+      "file": "Figure_1_subtype_landscape.png",
+      "exists": false,
+      "legacy": true
+    },
+    {
+      "file": "Figure_1_subtype_landscape.tiff",
+      "exists": false,
+      "legacy": true
+    },
+    {
+      "file": "Figure_1_subtype_landscape_source_data.csv",
+      "exists": false,
+      "legacy": true
+    }
+  ],
+  "failures": {}
+}

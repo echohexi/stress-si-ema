@@ -1,0 +1,28 @@
+﻿panel,mediator,subtype,estimate,low,high,credible
+a-path,Entrapment,C1,0.061,0.055,0.068,True
+b-path,Entrapment,C1,0.019,0.006,0.032,True
+indirect,Entrapment,C1,0.0012,0.0004,0.002,True
+a-path,Entrapment,C2,0.1,0.091,0.109,True
+b-path,Entrapment,C2,0.162,0.145,0.179,True
+indirect,Entrapment,C2,0.0162,0.0141,0.0185,True
+a-path,Entrapment,C3,0.073,0.059,0.088,True
+b-path,Entrapment,C3,0.261,0.234,0.288,True
+indirect,Entrapment,C3,0.0191,0.015,0.0235,True
+a-path,Perceived burdensomeness,C1,0.034,0.029,0.039,True
+b-path,Perceived burdensomeness,C1,0.023,0.005,0.042,True
+indirect,Perceived burdensomeness,C1,0.0008,0.0002,0.0014,True
+a-path,Perceived burdensomeness,C2,0.07,0.063,0.077,True
+b-path,Perceived burdensomeness,C2,0.183,0.16,0.206,True
+indirect,Perceived burdensomeness,C2,0.0128,0.0109,0.0149,True
+a-path,Perceived burdensomeness,C3,0.047,0.035,0.058,True
+b-path,Perceived burdensomeness,C3,0.243,0.209,0.276,True
+indirect,Perceived burdensomeness,C3,0.0113,0.0083,0.0145,True
+a-path,Thwarted belongingness,C1,0.037,0.032,0.042,True
+b-path,Thwarted belongingness,C1,0.021,0.005,0.037,True
+indirect,Thwarted belongingness,C1,0.0008,0.0002,0.0014,True
+a-path,Thwarted belongingness,C2,0.066,0.058,0.073,True
+b-path,Thwarted belongingness,C2,0.154,0.132,0.174,True
+indirect,Thwarted belongingness,C2,0.0101,0.0083,0.0119,True
+a-path,Thwarted belongingness,C3,0.075,0.063,0.087,True
+b-path,Thwarted belongingness,C3,0.197,0.164,0.229,True
+indirect,Thwarted belongingness,C3,0.0146,0.0114,0.0183,True

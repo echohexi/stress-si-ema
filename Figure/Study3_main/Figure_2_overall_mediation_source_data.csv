@@ -1,0 +1,13 @@
+﻿panel,path,mediator,pd,estimate,low,high,credible
+a-path,Stress → Entrapment,Entrapment,> 0.999,0.068,0.061,0.074,True
+a-path,Stress → Perceived burdensomeness,Perceived burdensomeness,> 0.999,0.041,0.036,0.046,True
+a-path,Stress → Thwarted belongingness,Thwarted belongingness,> 0.999,0.044,0.039,0.049,True
+b-path,Entrapment → SI,Entrapment,> 0.999,0.037,0.027,0.048,True
+b-path,Perceived burdensomeness → SI,Perceived burdensomeness,> 0.999,0.041,0.023,0.058,True
+b-path,Thwarted belongingness → SI,Thwarted belongingness,> 0.999,0.025,0.013,0.038,True
+indirect,Stress → Entrapment → SI,Entrapment,> 0.999,0.0025,0.0018,0.0033,True
+indirect,Stress → Perceived burdensomeness → SI,Perceived burdensomeness,> 0.999,0.0016,0.0009,0.0024,True
+indirect,Stress → Thwarted belongingness → SI,Thwarted belongingness,> 0.999,0.0011,0.0006,0.0017,True
+dominance,Entrapment − Perceived burdensomeness,Entrapment,0.944,0.0009,-0.0002,0.002,False
+dominance,Entrapment − Thwarted belongingness,Entrapment,0.998,0.0014,0.0005,0.0024,True
+dominance,Perceived burdensomeness − Thwarted belongingness,Perceived burdensomeness,0.867,0.0005,-0.0004,0.0015,False

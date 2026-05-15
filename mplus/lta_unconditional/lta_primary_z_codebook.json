@@ -1,0 +1,80 @@
+{
+  "input": "data\\derived\\lta_person_wave_balanced_threshold8.csv",
+  "data_file": "mplus\\lta_unconditional\\lta_primary_z_wide.dat",
+  "n_participants": 377,
+  "n_rows": 377,
+  "primary_indicators_raw_to_short": {
+    "stress_sum_mean": "st",
+    "entrapment_mean": "en",
+    "burdensomeness_mean": "bu",
+    "belongingness_mean": "be",
+    "loneliness_mean": "lo"
+  },
+  "distal_outcomes_raw_to_short": {
+    "si_mean": "si",
+    "si_any_wave": "saw",
+    "si_any_prompt_prop": "sap"
+  },
+  "variable_names": [
+    "id",
+    "st1",
+    "en1",
+    "bu1",
+    "be1",
+    "lo1",
+    "si1",
+    "saw1",
+    "sap1",
+    "st2",
+    "en2",
+    "bu2",
+    "be2",
+    "lo2",
+    "si2",
+    "saw2",
+    "sap2",
+    "st3",
+    "en3",
+    "bu3",
+    "be3",
+    "lo3",
+    "si3",
+    "saw3",
+    "sap3",
+    "st4",
+    "en4",
+    "bu4",
+    "be4",
+    "lo4",
+    "si4",
+    "saw4",
+    "sap4"
+  ],
+  "standardization": {
+    "stress_sum_mean": {
+      "mean": 2.2330030049013323,
+      "sd": 2.290959865419595
+    },
+    "entrapment_mean": {
+      "mean": 1.401187283620383,
+      "sd": 0.6285049638936748
+    },
+    "burdensomeness_mean": {
+      "mean": 1.2786386304035597,
+      "sd": 0.47139924120745713
+    },
+    "belongingness_mean": {
+      "mean": 1.3523740293761737,
+      "sd": 0.5146224787192439
+    },
+    "loneliness_mean": {
+      "mean": 1.5041878232401609,
+      "sd": 0.7259051213883705
+    }
+  },
+  "model_notes": [
+    "Primary indicators were globally z-standardized across all balanced person-wave rows.",
+    "SI variables are retained in the data file for later distal validation but are not used in unconditional LTA inputs.",
+    "The primary unconditional LTA uses measurement-invariant class-specific means across waves to keep state labels comparable over time."
+  ]
+}

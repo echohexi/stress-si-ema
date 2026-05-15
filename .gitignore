@@ -1,0 +1,54 @@
+# ===== Privacy: raw individual-level data (DO NOT commit) =====
+all_scales_v5_FINAL.csv
+data/derived/lta_*.csv
+data/derived/wave_*.csv
+data/derived/*.json
+!data/derived/*.md
+# Mplus per-subject posterior probabilities are individual-level
+*_cprob.dat
+*.dat
+
+# ===== Large / regenerable =====
+.venv-figures/
+*.rds
+*.tiff
+nature_figures.zip
+paper-framework-figure-studio-pro-v1.2.0-skill.zip
+article/
+小论文中文摘要.pdf
+preregistration_final.pdf
+_unpacked_main/
+_unpacked_table2/
+
+# ===== Local-only build artifacts =====
+.Rhistory
+.RData
+.Ruserdata
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+logs/
+*.log
+
+# ===== OS / editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== Claude session state =====
+.claude/
+
+# ===== Local-only Windows recovery scripts =====
+_check.ps1
+_clean.ps1
+_clean2.ps1
+_clean_netease.ps1
+_detail.ps1
+_netease.ps1
+_netease2.ps1
+_netease3.ps1
+_scan_appdata.ps1
+_scan_c.ps1
+_scan_user.ps1
+_main_draft.txt

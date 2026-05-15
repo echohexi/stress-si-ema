@@ -1,0 +1,19 @@
+﻿panel,label,model,estimate,low,high,credible
+within,C1,Before mediators,0.0012,-0.0007,0.003,False
+within,C1,After mediators,0.0004,-0.001,0.0017,False
+within,C1,Attenuation,0.0008,-0.0015,0.0031,False
+within,C2,Before mediators,0.0327,0.0298,0.0357,True
+within,C2,After mediators,0.0096,0.007,0.0122,True
+within,C2,Attenuation,0.0231,0.0191,0.027,True
+within,C3,Before mediators,0.0437,0.0385,0.0486,True
+within,C3,After mediators,0.0126,0.0083,0.0168,True
+within,C3,Attenuation,0.0311,0.0245,0.0376,True
+contrast,C2 - C1,Before mediators,0.0316,0.0286,0.0345,True
+contrast,C2 - C1,After mediators,0.0093,0.0065,0.0121,True
+contrast,C2 - C1,Attenuation,0.0223,0.0182,0.0264,True
+contrast,C3 - C1,Before mediators,0.0425,0.0372,0.0477,True
+contrast,C3 - C1,After mediators,0.0122,0.0078,0.0167,True
+contrast,C3 - C1,Attenuation,0.0303,0.0235,0.0371,True
+contrast,C3 - C2,Before mediators,0.011,0.0055,0.0163,True
+contrast,C3 - C2,After mediators,0.003,-0.0018,0.0077,False
+contrast,C3 - C2,Attenuation,0.008,0.0009,0.0151,True

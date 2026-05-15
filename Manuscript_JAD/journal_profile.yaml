@@ -1,0 +1,84 @@
+journal: Journal of Affective Disorders
+publisher: Elsevier
+issn: "0165-0327"
+article_type: Full-Length Research Paper
+guidelines_url: https://www.sciencedirect.com/journal/journal-of-affective-disorders/publish/guide-for-authors
+guidelines_fetched: 2026-05-13
+
+# ---- Length limits ----
+main_text_limit: 5000          # words, excluding references
+main_text_excludes: ["references", "abstract", "highlights", "figure legends"]
+abstract_limit: 250            # words
+abstract_structure: "Structured strongly recommended (Background / Methods / Results / Limitations / Conclusions); confirm at submission"
+methods_limit: null            # no separate cap; folded into 5000-word main
+figure_table_combined_limit: 6
+reference_limit: null          # no hard cap; keep within main-text ratio expectations
+supplementary: "Unlimited, separate file; tables/figures > 6 should be moved to Supplementary Material"
+
+# ---- Format ----
+citation_style: "Elsevier Harvard (author-year)"   # NOT Vancouver
+reference_format_example: "Xu, J., 2013. Title. Journal of Affective Disorders 150 (1), 123–130."
+section_order:
+  - Title page (with author affiliations, corresponding author)
+  - Highlights (separate file at acceptance, Word .docx with type = Highlights)
+  - Abstract + Keywords
+  - 1. Introduction
+  - 2. Methods (Participants, Procedure, Measures, Statistical analyses, Ethics)
+  - 3. Results
+  - 4. Discussion (incl. Limitations and Conclusions subsections)
+  - Declaration of generative AI and AI-assisted technologies (NEW required section)
+  - Funding / Role of funding source
+  - Author contributions (CRediT taxonomy)
+  - Declaration of competing interest
+  - Data availability statement
+  - Acknowledgements
+  - References
+  - Tables
+  - Figure legends
+  - Figures
+methods_placement: inline      # main text, after Introduction
+
+highlights:
+  count: "3 to 5"
+  char_limit: 85               # per bullet, including spaces
+  format: "Plain language; no jargon; no abbreviations; submitted as a separate .docx with file type = Highlights at final files stage"
+
+keywords:
+  count: "3 to 6 (recommended)"
+  format: "Avoid abbreviations; separate with semicolons"
+
+# ---- AI policy ----
+ai_policy_summary: "Generative AI / AI-assisted technologies for writing assistance must be disclosed; not for image/figure generation; AI tools cannot be listed as authors."
+ai_disclosure_required: true
+ai_tools_declaration_format: |
+  During the preparation of this work the author(s) used [NAME OF TOOL / SERVICE]
+  in order to [REASON]. After using this tool/service, the author(s) reviewed
+  and edited the content as needed and take(s) full responsibility for the
+  content of the published article.
+ai_tools_declaration_location: "New section titled 'Declaration of generative AI and AI-assisted technologies in the manuscript preparation process' placed before References."
+
+# ---- Submission format ----
+file_format: ".docx (or .tex). PDF not acceptable as source."
+review_model: "Single anonymized review (single-blind)"
+preferred_software: "MS Word; Elsevier accepts LaTeX (elsarticle class)"
+latex_template_url: "https://www.elsevier.com/researcher/author/policies-and-guidelines/latex-instructions"
+latex_template_class: "elsarticle"
+
+# ---- Manuscript-specific notes for this paper ----
+applicable_reporting_checklist: "STROBE (cohort/cross-sectional); supplement with STROBE-EMA conventions"
+ethics_statement_required: true
+trial_registration_required: false           # observational EMA, not RCT
+preregistration_disclosure_recommended: true # OSF link in Methods §2.5 or §2.6
+
+# ---- Editorial priorities (research-intelligence pass) ----
+editorial_priorities:
+  - "Clinical/translational relevance to affective and suicidal phenomena"
+  - "Methodological rigor; pre-registration favoured"
+  - "Cross-cultural samples increasingly welcomed"
+  - "Acknowledged AI-tool transparency"
+desk_rejection_red_flags:
+  - "Word-count overrun"
+  - "Insufficient ethics statement"
+  - "Mis-formatted Highlights"
+  - "Missing AI disclosure when AI was used"
+  - "Out-of-scope (e.g., pure animal models without affective relevance)"

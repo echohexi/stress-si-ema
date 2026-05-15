@@ -1,0 +1,22 @@
+﻿section,variable,variable_label,subtype,subtype_label,mean,sd,percent
+raw_mean,Stress sum intensity,Stress,C1,Low-stable,1.99,2.98,
+raw_mean,Stress sum intensity,Stress,C2,Low-mod / high-fluct,2.91,3.72,
+raw_mean,Stress sum intensity,Stress,C3,High / high-fluct,4.36,4.15,
+raw_mean,Entrapment,Entrapment,C1,Low-stable,1.28,0.66,
+raw_mean,Entrapment,Entrapment,C2,Low-mod / high-fluct,1.66,0.93,
+raw_mean,Entrapment,Entrapment,C3,High / high-fluct,2.59,1.01,
+raw_mean,Perceived burdensomeness,Burdensomeness,C1,Low-stable,1.18,0.45,
+raw_mean,Perceived burdensomeness,Burdensomeness,C2,Low-mod / high-fluct,1.49,0.73,
+raw_mean,Perceived burdensomeness,Burdensomeness,C3,High / high-fluct,2.24,0.94,
+raw_mean,Thwarted belongingness,Belongingness,C1,Low-stable,1.25,0.54,
+raw_mean,Thwarted belongingness,Belongingness,C2,Low-mod / high-fluct,1.56,0.74,
+raw_mean,Thwarted belongingness,Belongingness,C3,High / high-fluct,2.32,0.92,
+raw_mean,Suicidal ideation,SI,C1,Low-stable,1.0,0.04,
+raw_mean,Suicidal ideation,SI,C2,Low-mod / high-fluct,1.15,0.39,
+raw_mean,Suicidal ideation,SI,C3,High / high-fluct,1.99,0.7,
+prevalence,Any momentary stressor endorsed,Any stressor,C1,Low-stable,,,43.8
+prevalence,Any momentary stressor endorsed,Any stressor,C2,Low-mod / high-fluct,,,53.0
+prevalence,Any momentary stressor endorsed,Any stressor,C3,High / high-fluct,,,69.7
+prevalence,Any momentary suicidal ideation (SI > 1),Any SI,C1,Low-stable,,,0.6
+prevalence,Any momentary suicidal ideation (SI > 1),Any SI,C2,Low-mod / high-fluct,,,16.0
+prevalence,Any momentary suicidal ideation (SI > 1),Any SI,C3,High / high-fluct,,,89.6

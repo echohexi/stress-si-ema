@@ -1,0 +1,152 @@
+Mplus VERSION 8.3
+MUTHEN & MUTHEN
+05/14/2026   6:41 PM
+
+INPUT INSTRUCTIONS
+
+  TITLE:
+    EMA-derived 3-state unconditional LTA (measurement-invariant);
+
+  DATA:
+    FILE IS lta_primary_z_wide.dat;
+
+  VARIABLE:
+    NAMES ARE
+      id st1 en1 bu1 be1 lo1 si1 saw1
+      sap1 st2 en2 bu2 be2 lo2 si2 saw2
+      sap2 st3 en3 bu3 be3 lo3 si3 saw3
+      sap3 st4 en4 bu4 be4 lo4 si4 saw4
+      sap4;
+    USEVARIABLES ARE
+      st1 en1 bu1 be1 lo1 st2 en2 bu2
+      be2 lo2 st3 en3 bu3 be3 lo3 st4
+      en4 bu4 be4 lo4;
+    IDVARIABLE IS id;
+    CLASSES = c1(3) c2(3) c3(3) c4(3);
+    MISSING ARE ALL (-999);
+
+  ANALYSIS:
+    TYPE = MIXTURE;
+    STARTS = 1200 300;
+    STITERATIONS = 30;
+    PROCESSORS = 4;
+
+  MODEL:
+  %OVERALL%
+    st1 st2 st3 st4 (vst);
+    en1 en2 en3 en4 (ven);
+    bu1 bu2 bu3 bu4 (vbu);
+    be1 be2 be3 be4 (vbe);
+    lo1 lo2 lo3 lo4 (vlo);
+
+    c2 ON c1;
+    c3 ON c2;
+    c4 ON c3;
+
+  MODEL c1:
+    %c1#1%
+      [st1] (mst1);
+      [en1] (men1);
+      [bu1] (mbu1);
+      [be1] (mbe1);
+      [lo1] (mlo1);
+    %c1#2%
+      [st1] (mst2);
+      [en1] (men2);
+      [bu1] (mbu2);
+      [be1] (mbe2);
+      [lo1] (mlo2);
+    %c1#3%
+      [st1] (mst3);
+      [en1] (men3);
+      [bu1] (mbu3);
+      [be1] (mbe3);
+      [lo1] (mlo3);
+
+  MODEL c2:
+    %c2#1%
+      [st2] (mst1);
+      [en2] (men1);
+      [bu2] (mbu1);
+      [be2] (mbe1);
+      [lo2] (mlo1);
+    %c2#2%
+      [st2] (mst2);
+      [en2] (men2);
+      [bu2] (mbu2);
+      [be2] (mbe2);
+      [lo2] (mlo2);
+    %c2#3%
+      [st2] (mst3);
+      [en2] (men3);
+      [bu2] (mbu3);
+      [be2] (mbe3);
+      [lo2] (mlo3);
+
+  MODEL c3:
+    %c3#1%
+      [st3] (mst1);
+      [en3] (men1);
+      [bu3] (mbu1);
+      [be3] (mbe1);
+      [lo3] (mlo1);
+    %c3#2%
+      [st3] (mst2);
+      [en3] (men2);
+      [bu3] (mbu2);
+      [be3] (mbe2);
+      [lo3] (mlo2);
+    %c3#3%
+      [st3] (mst3);
+      [en3] (men3);
+      [bu3] (mbu3);
+      [be3] (mbe3);
+      [lo3] (mlo3);
+
+  MODEL c4:
+    %c4#1%
+      [st4] (mst1);
+      [en4] (men1);
+      [bu4] (mbu1);
+      [be4] (mbe1);
+      [lo4] (mlo1);
+    %c4#2%
+      [st4] (mst2);
+      [en4] (men2);
+      [bu4] (mbu2);
+      [be4] (mbe2);
+      [lo4] (mlo2);
+    %c4#3%
+      [st4] (mst3);
+      [en4] (men3);
+      [bu4] (mbu3);
+      [be4] (mbe3);
+      [lo4] (mlo3);
+
+  OUTPUT:
+    TECH1 TECH4 TECH8 TECH10 TECH15;
+
+  SAVEDATA:
+    FILE IS lta_3state_invariant_cprob.dat;
+    SAVE = CPROBABILITIES;
+
+
+
+*** WARNING in SAVEDATA command
+   (Err#: 30)
+  Error opening data save file:
+  lta_3state_invariant_cprob.dat
+  Data will not be saved.
+*** WARNING in MODEL command
+  All variables are uncorrelated with all other variables within class.
+  Check that this is what is intended.
+*** WARNING in OUTPUT command
+  TECH10 option is only available with categorical or count outcomes.
+  Request for TECH10 is ignored.
+   3 WARNING(S) FOUND IN THE INPUT INSTRUCTIONS
+
+
+
+
+EMA-derived 3-state unconditional LTA (measurement-invariant);
+
