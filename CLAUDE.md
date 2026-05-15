@@ -42,5 +42,61 @@ Apply these **without being asked**, on every relevant action:
 - Manuscript draft: `Risk and Resource Axes Jointly Shape...docx`
 - Methods/Results in JAD style: `Methods_JAD_Style.md`, `Results_JAD_Style.md`
 
+## Dual-track workflow: Claude.ai × Claude Code
+
+**Why:** User's network is unstable; long single-response generation in Claude Code triggers `API Error: socket closed unexpectedly`. Claude.ai's web streaming protocol auto-reconnects and is robust to this. Split work accordingly.
+
+### Routing rule (the only one to remember)
+> **Does the task need to touch anything besides keyboard text?**
+> - Touches files / runs commands / git ops → **Claude Code (here)**
+> - Pure text in, pure text out → **Claude.ai**
+
+### Concretely
+
+| Task | Where | Reason |
+|---|---|---|
+| Drafting Introduction / Discussion long prose | Claude.ai | Single 2000+ word output, no file IO needed |
+| Cover Letter, Response to Reviewers | Claude.ai | Polished prose, sensitive to socket drops |
+| Reading 67 article PDFs for citation hunting | Claude.ai (Projects upload) | Robust file ingest vs. local Read |
+| Web search for recent literature | Claude.ai | Built-in search tool |
+| Locking numbers (Phase 1 §9, §10) | Claude Code | Needs xlsx parsing, Edit, git commit |
+| Fixing wrong numbers in `Results_JAD_Style.md` etc. | Claude Code | Needs git diff audit + chunked Edit |
+| brms / R / Python script writing & running | Claude Code | Needs Bash execution |
+| Figure generation & debugging | Claude Code | Needs stderr + PNG inspection |
+| Pure narrative brainstorming (C2/C3 framing etc.) | Claude.ai | No files touched |
+| Landing brainstormed text into Manuscript_JAD/ | Claude Code | I Write/Edit, you paste the text |
+
+### Handoff protocol
+
+**Claude.ai → Claude Code (text inbound):**
+- User pastes Claude.ai output into Claude Code chat.
+- Claude Code Writes to `Manuscript_JAD/Phase2[a-d]_<Section>_draft.md`.
+- Claude Code immediately `git add` + commit so the draft is checkpointed.
+
+**Claude Code → Claude.ai (context outbound):**
+- Claude Code packages "feeding bundles" (locked numbers + narrative spine + key refs) as a single markdown.
+- User copies the markdown into Claude.ai's chat or Claude.ai Project knowledge.
+- Naming: `Manuscript_JAD/_feed_<topic>.md` (underscore prefix marks "scratch/feed" files).
+
+### Naming convention for manuscript drafts
+
+```
+Manuscript_JAD/
+├── Phase0_JAD_profile.md             (existing — journal target)
+├── Phase1_locked_numbers.md          (existing — number-of-truth)
+├── Phase1d_C2_narrative_strategy.md  (existing — narrative spine)
+├── Phase2a_Introduction_draft.md     (Claude.ai output lands here)
+├── Phase2b_Methods_draft.md          (Claude.ai output lands here)
+├── Phase2c_Results_draft.md          (Claude.ai output lands here)
+├── Phase2d_Discussion_draft.md       (Claude.ai output lands here)
+├── Phase3_full_assembled.md          (Claude Code stitches all Phase 2 drafts)
+└── _feed_<topic>.md                  (Claude Code → Claude.ai context bundles)
+```
+
+### What Claude Code should proactively do
+- When user asks for "write a 1000+ word section" → suggest moving to Claude.ai, offer to prepare a feeding bundle instead.
+- When user pastes Claude.ai output → Write to the correct `Phase2*` file + git commit immediately.
+- After each Claude.ai-sourced commit, briefly state: "Bundle committed at `<file>` — if Claude.ai session drops, this version survives."
+
 ## Supervisor context
 Advisor: An Li (安莉), Tianjin University. See `supervisor_briefing.md` for current state.
